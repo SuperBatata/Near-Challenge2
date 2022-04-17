@@ -4,7 +4,7 @@ import { login, logout } from "./utils";
 import "./global.css";
 
 import getConfig from "./config";
-import Content from "./Components/Content";
+
 const { networkId } = getConfig(process.env.NODE_ENV || "development");
 
 export default function App() {
@@ -59,7 +59,6 @@ export default function App() {
             htmlFor="greeting"
             style={{
               color: "red",
-            
             }}
           >
             Hello , {greeting}

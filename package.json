@@ -1,8 +1,11 @@
 {
+  "homepage": "http://superbatata.github.io/Near-Challenge2",
   "name": "challenge2",
   "version": "0.1.0",
   "license": "UNLICENSED",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploygh": "gh-pages -d build",
     "build": "npm run build:contract && npm run build:web",
     "build:contract": "node contract/compile.js",
     "build:contract:debug": "node contract/compile.js --debug",
